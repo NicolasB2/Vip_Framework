@@ -1,4 +1,4 @@
-package model;
+package factories;
 
 public abstract class AbstractModelFactory {
 
