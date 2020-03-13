@@ -1,5 +1,5 @@
 package productFamilies;
 
-public interface IRuta {
+public interface IRoute {
 
 }

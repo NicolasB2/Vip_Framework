@@ -1,5 +1,5 @@
 package productFamilies;
 
-public interface IEstacion {
+public interface IPlane {
 
 }
