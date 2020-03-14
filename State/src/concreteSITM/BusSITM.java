@@ -8,6 +8,7 @@ public class BusSITM implements IBus{
 
 	private String licencePlate;
 	private String model;
+	private String type;
 	private String concessinaire;
 	private Point actualPosition;
 	private Point nextPosition;
@@ -16,7 +17,7 @@ public class BusSITM implements IBus{
 	public BusSITM() {
 	}
 	
-	public BusSITM(String licencePlate, String model, String concessinaire, Point actualPosition, Point nextPosition,
+	public BusSITM(String licencePlate, String model, String concessinaire,String type, Point actualPosition, Point nextPosition,
 			Long timeLocation) {
 		super();
 		this.licencePlate = licencePlate;
@@ -74,8 +75,12 @@ public class BusSITM implements IBus{
 	public void setTimeLocation(Long timeLocation) {
 		this.timeLocation = timeLocation;
 	}
-	
-	
-	
-	
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
 }
