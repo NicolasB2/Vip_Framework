@@ -63,4 +63,24 @@ public class SystemStateSITM extends SystemStateProducte {
 		}
 		return null;
 	}
+	
+	private void addBus(BusSITM bus) {
+		buses.add(bus);
+	}
+	
+	private void addEstation(EstationSITM estation) {
+		estations.add(estation);
+	}
+	
+	private void addPlane(PlaneSITM plane) {
+		planes.add(plane);
+	}
+	
+	private void addRoute(RouteSITM route) {
+		routes.add(route);
+	}
+	
+	private void addStop(StopSITM stop) {
+		stops.add(stop);
+	}
 }
