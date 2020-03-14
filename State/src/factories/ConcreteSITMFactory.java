@@ -1,5 +1,5 @@
 package factories;
 
-public class ConcreteSITMFactory {
+public class ConcreteSITMFactory extends AbstractModelFactory {
 
 }

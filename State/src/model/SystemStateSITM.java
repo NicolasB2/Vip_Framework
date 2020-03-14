@@ -1,5 +1,5 @@
 package model;
 
-public class SystemStateSITM extends SystemState {
+public class SystemStateSITM extends SystemStateProducte {
 
 }

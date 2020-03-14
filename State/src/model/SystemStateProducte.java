@@ -6,7 +6,7 @@ import concreteSITM.PlaneSITM;
 import concreteSITM.RouteSITM;
 import concreteSITM.StopSITM;
 
-public abstract class SystemState {
+public abstract class SystemStateProducte {
 
 	private BusSITM bus;
 	private PlaneSITM plane;
