@@ -9,35 +9,13 @@ import productFamilies.IPlane;
 import productFamilies.IRoute;
 import productFamilies.IStop;
 
-public abstract class AbstractModelFactory {
+public interface AbstractModelFactory {
 	
-	public SystemStateProducte createProduct(String type) {
-		createBus();
-		createEstations();
-		createPlanes();
-		createRoutes();
-		createStops();
-		return null;
-	}
-	
-	private ArrayList<IBus> createBus(){
-		return null;
-	}
-	
-	private ArrayList<IEstation> createEstations(){
-		return null;
-	}
-	
-	private ArrayList<IPlane> createPlanes(){
-		return null;
-	}
-	
-	private ArrayList<IRoute> createRoutes(){
-		return null;
-	}
-	
-	private ArrayList<IStop> createStops(){
-		return null;
-	}
+	public SystemStateProducte createProduct(String type);
+	public ArrayList<IBus> createBus();
+	public ArrayList<IEstation> createEstations();
+	public ArrayList<IPlane> createPlanes();
+	public ArrayList<IRoute> createRoutes();	
+	public ArrayList<IStop> createStops();
 
 }
