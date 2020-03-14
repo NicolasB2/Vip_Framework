@@ -1,18 +1,18 @@
 package model;
 
-import concreteSITM.Bus;
-import concreteSITM.Estation;
-import concreteSITM.Plane;
-import concreteSITM.Route;
-import concreteSITM.Stop;
+import concreteSITM.BusSITM;
+import concreteSITM.EstationSITM;
+import concreteSITM.PlaneSITM;
+import concreteSITM.RouteSITM;
+import concreteSITM.StopSITM;
 
 public abstract class SystemState {
 
-	private Bus bus;
-	private Plane plane;
-	private Estation estation;
-	private Route route;
-	private Stop stop;
+	private BusSITM bus;
+	private PlaneSITM plane;
+	private EstationSITM estation;
+	private RouteSITM route;
+	private StopSITM stop;
 	
 	
 	
