@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import productFamilies.IBus;
 import productFamilies.IEstation;
-import productFamilies.IPlane;
+import productFamilies.IPlan;
 import productFamilies.IRoute;
 import productFamilies.IStop;
 
 public class SystemStateProducte {
 
 	protected ArrayList<IBus>buses;
-	protected ArrayList<IPlane> planes;
+	protected ArrayList<IPlan> plans;
 	protected ArrayList<IEstation> estations;
 	protected ArrayList<IRoute> routes;
 	protected ArrayList<IStop> stops;
@@ -22,11 +22,11 @@ public class SystemStateProducte {
 	public void setBuses(ArrayList<IBus> buses) {
 		this.buses = buses;
 	}
-	public ArrayList<IPlane> getPlanes() {
-		return planes;
+	public ArrayList<IPlan> getPlanes() {
+		return plans;
 	}
-	public void setPlanes(ArrayList<IPlane> planes) {
-		this.planes = planes;
+	public void setPlanes(ArrayList<IPlan> planes) {
+		this.plans = plans;
 	}
 	public ArrayList<IEstation> getEstations() {
 		return estations;

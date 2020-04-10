@@ -1,5 +1,5 @@
 package productFamilies;
 
-public interface IPlane {
+public interface IPlan {
 
 }

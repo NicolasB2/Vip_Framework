@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import model.SystemStateProducte;
 import productFamilies.IBus;
 import productFamilies.IEstation;
-import productFamilies.IPlane;
+import productFamilies.IPlan;
 import productFamilies.IRoute;
 import productFamilies.IStop;
 
@@ -30,7 +30,7 @@ public class ConcrateSITPFactory implements AbstractModelFactory{
 	}
 
 	@Override
-	public ArrayList<IPlane> createPlanes() {
+	public ArrayList<IPlan> createPlanes() {
 		// TODO Auto-generated method stub
 		return null;
 	}

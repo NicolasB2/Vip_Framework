@@ -2,12 +2,12 @@ package model;
 
 import concreteSITM.BusSITM;
 import concreteSITM.EstationSITM;
-import concreteSITM.PlaneSITM;
+import concreteSITM.PlanSITM;
 import concreteSITM.RouteSITM;
 import concreteSITM.StopSITM;
 import productFamilies.IBus;
 import productFamilies.IEstation;
-import productFamilies.IPlane;
+import productFamilies.IPlan;
 import productFamilies.IRoute;
 import productFamilies.IStop;
 
@@ -24,9 +24,9 @@ public class SystemStateSITM extends SystemStateProducte {
 		return null;
 	}
 
-	private IPlane findPlanesById(String id) {
-		for (int i = 0; i < planes.size(); i++) {
-			PlaneSITM concretePlane = (PlaneSITM) planes.get(i);
+	private IPlan findPlanesById(String id) {
+		for (int i = 0; i < plans.size(); i++) {
+			PlanSITM concretePlane = (PlanSITM) plans.get(i);
 			if (concretePlane.getId().equals(id)) {
 				return concretePlane;
 			}
@@ -75,8 +75,8 @@ public class SystemStateSITM extends SystemStateProducte {
 	}
 
 	private void updatePlanesById(String id) {
-		for (int i = 0; i < planes.size(); i++) {
-			PlaneSITM concretePlane = (PlaneSITM) planes.get(i);
+		for (int i = 0; i < plans.size(); i++) {
+			PlanSITM concretePlane = (PlanSITM) plans.get(i);
 			if (concretePlane.getId().equals(id)) {
 
 			}
@@ -122,8 +122,8 @@ public class SystemStateSITM extends SystemStateProducte {
 		estations.add(estation);
 	}
 
-	private void addPlane(PlaneSITM plane) {
-		planes.add(plane);
+	private void addPlane(PlanSITM plane) {
+		plans.add(plane);
 	}
 
 	private void addRoute(RouteSITM route) {

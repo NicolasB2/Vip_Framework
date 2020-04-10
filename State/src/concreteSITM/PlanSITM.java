@@ -2,18 +2,18 @@ package concreteSITM;
 
 import java.util.Date;
 
-import productFamilies.IPlane;
+import productFamilies.IPlan;
 
-public class PlaneSITM implements IPlane {
+public class PlanSITM implements IPlan {
 
 	private String id;
 	private Date startDate;
 	private Date endDate;
 	
-	public PlaneSITM() {
+	public PlanSITM() {
 	}
 
-	public PlaneSITM(String id, Date startDate, Date endDate) {
+	public PlanSITM(String id, Date startDate, Date endDate) {
 		super();
 		this.id = id;
 		this.startDate = startDate;
