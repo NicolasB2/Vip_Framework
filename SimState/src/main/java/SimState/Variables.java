@@ -6,7 +6,6 @@ import java.util.Hashtable;
 public class Variables {
 	
 	private HashMap<String, Object> headersVariables;
-//	private ProbabilisticDistribution probabilisticDistribution;
 
 	public Variables() {
 		headersVariables = new HashMap<>();
@@ -19,8 +18,10 @@ public class Variables {
 	}
 	
 	public void addVariable(String variable,String type, Hashtable<String,Object>args) { 
-		//AbstractRealDistribution distribution = probabilisticDistribution.typeHandler(type, args);
-		headersVariables.put(variable, "");
+		//Probabilistic distribution its a class from other component
+		//this class have to be added in the integration phase
+		ProbabilisticDistribution distribution = new ProbabilisticDistribution(type, args);
+		headersVariables.put(variable,distribution);
 	}
 	
 	public void deletedVariable(String variable) {
@@ -32,29 +33,24 @@ public class Variables {
 	}
 	
 	public String getVariableValue(String variable) {
+		
 		if(headersVariables.containsKey(variable)) {
 			if (headersVariables.get(variable) instanceof String) {
 				String value = (String) headersVariables.get(variable);
 				return value;
 			}
+			
+			if (headersVariables.get(variable) instanceof ProbabilisticDistribution) {
+				ProbabilisticDistribution value = (ProbabilisticDistribution) headersVariables.get(variable);
+				return value.getNextDistributionValue()+"";
+			}
 		}
-//		else if (headersVariables.get(variable) instanceof AbstractRealDistribution) {
-//			AbstractRealDistribution value = (AbstractRealDistribution) headersVariables.get(variable);
-//			return value
-//		}
+		
 		return null;
 	}
 	
 	public Object[] getVariablesHeaders() {
 		return  headersVariables.keySet().toArray();
 	}
-
-//	public ProbabilisticDistribution getProbabilisticDistribution() {
-//		return probabilisticDistribution;
-//	}
-//
-//	public void setProbabilisticDistribution(ProbabilisticDistribution probabilisticDistribution) {
-//		this.probabilisticDistribution = probabilisticDistribution;
-//	}
 	
 }
