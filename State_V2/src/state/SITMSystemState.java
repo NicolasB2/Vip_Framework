@@ -1,5 +1,10 @@
 package state;
 
+import state.ProductInterface.IBus;
+import state.ProductInterface.IPlan;
+import state.ProductInterface.IRute;
+import state.ProductInterface.IStop;
+
 public class SITMSystemState extends SystemStateProduct {
 
 	public void SimulationSystemStateSITM() {
