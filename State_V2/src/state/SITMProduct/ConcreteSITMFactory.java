@@ -9,10 +9,11 @@ import state.ProductInterface.IPlan;
 import state.ProductInterface.IRute;
 import state.ProductInterface.IStop;
 
-public class SITMConcreteFactory implements AbstracModelFactory {
+public class ConcreteSITMFactory implements AbstracModelFactory {
 
-	public void ConcreteSITMFactory() {
-		throw new UnsupportedOperationException();
+	@Override
+	public SystemStateProduct createProduct(int type) {
+		return null;
 	}
 	
 	public SystemStateProduct createProducto(int type) {
@@ -34,30 +35,4 @@ public class SITMConcreteFactory implements AbstracModelFactory {
 	private ArrayList<IPlan> createPlanes() {
 		throw new UnsupportedOperationException();
 	}
-
-	@Override
-	public SystemStateProduct createProduct(int type) {
-		return null;
-	}
-
-	@Override
-	public ArrayList<IBus> createBus() {
-		return null;
-	}
-
-	@Override
-	public ArrayList<IRute> createRute() {
-		return null;
-	}
-
-	@Override
-	public ArrayList<IStop> createStop() {
-		return null;
-	}
-
-	@Override
-	public ArrayList<IPlan> createPlane() {
-		return null;
-	}
-
 }
